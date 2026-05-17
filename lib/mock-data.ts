@@ -19,9 +19,8 @@ export const MOCK_PRODUCERS: Producer[] = [
     },
     categories: ["beef", "pork", "lamb"],
     images: {
-      banner:
-        "https://images.unsplash.com/photo-1544025162-d76694265947?w=1400&q=80",
-      logo: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200&q=80",
+      banner: "/images/hero.jpg",
+      logo: "/images/ribeye.jpg",
     },
     status: "approved",
     commissionRate: 0,
@@ -269,8 +268,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 1600,
         quantity: 2,
         unit: "approx. 200g portion",
-        imageUrl:
-          "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
       {
         productId: "prod-2",
@@ -280,8 +278,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 850,
         quantity: 2,
         unit: "pack of 6",
-        imageUrl:
-          "https://images.unsplash.com/photo-1606851094661-38efb6dfe73d?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
     ],
     producerIds: ["producer-1"],
