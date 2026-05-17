@@ -1,48 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  /* Populated at runtime by next/font CSS variables injected on <html> */
   --font-display: var(--font-playfair-display), Georgia, serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-sans: var(--font-raleway), system-ui, sans-serif;
 
-  --color-forest-50: #f0f7ec;
-  --color-forest-100: #dcefd0;
-  --color-forest-200: #b9dfa2;
-  --color-forest-300: #8ec96e;
-  --color-forest-400: #67b343;
-  --color-forest-500: #4a9a2c;
-  --color-forest-600: #367a1f;
-  --color-forest-700: #2d6a4f;
-  --color-forest-800: #1e4d38;
-  --color-forest-900: #163527;
-  --color-forest-950: #0b1e16;
+  /* Primary — deep wine burgundy */
+  --color-forest-50: #f9eced;
+  --color-forest-100: #f3d8db;
+  --color-forest-200: #e9b5ba;
+  --color-forest-300: #dc8790;
+  --color-forest-400: #cb556a;
+  --color-forest-500: #b83050;
+  --color-forest-600: #9c2342;
+  --color-forest-700: #7e1a34;
+  --color-forest-800: #6b1a2c;
+  --color-forest-900: #521626;
+  --color-forest-950: #2e0b14;
 
-  --color-earth-50: #faf6f1;
-  --color-earth-100: #f2e8d9;
-  --color-earth-200: #e4cfb3;
-  --color-earth-300: #d2af87;
-  --color-earth-400: #be8d5e;
-  --color-earth-500: #a8723e;
-  --color-earth-600: #8b5e3c;
-  --color-earth-700: #6f4a2f;
-  --color-earth-800: #563924;
-  --color-earth-900: #3d291a;
-  --color-earth-950: #24180d;
+  --color-earth-50: #f8f0f1;
+  --color-earth-100: #f0dee0;
+  --color-earth-200: #e2c0c4;
+  --color-earth-300: #ce9aa0;
+  --color-earth-400: #b5717a;
+  --color-earth-500: #9c4f5a;
+  --color-earth-600: #7f3c47;
+  --color-earth-700: #672f39;
+  --color-earth-800: #55272f;
+  --color-earth-900: #472228;
+  --color-earth-950: #280e12;
 
-  --color-harvest-50: #fefce8;
-  --color-harvest-100: #fdf6c3;
-  --color-harvest-200: #fbea8a;
-  --color-harvest-300: #f8d94b;
-  --color-harvest-400: #f4c420;
-  --color-harvest-500: #e8a838;
-  --color-harvest-600: #d4841a;
-  --color-harvest-700: #b06213;
-  --color-harvest-800: #8d4a14;
-  --color-harvest-900: #733c14;
-  --color-harvest-950: #411e07;
+  /* Accent — warm brass / burnished gold */
+  --color-harvest-50: #fdf9ec;
+  --color-harvest-100: #faf1d0;
+  --color-harvest-200: #f3e09e;
+  --color-harvest-300: #eac963;
+  --color-harvest-400: #e1b033;
+  --color-harvest-500: #d09520;
+  --color-harvest-600: #b07615;
+  --color-harvest-700: #8e5b10;
+  --color-harvest-800: #724912;
+  --color-harvest-900: #5e3c12;
+  --color-harvest-950: #341f07;
 
-  --color-cream: #fafaf5;
-  --color-cream-dark: #f2f0e8;
+  --color-cream: #faf4f5;
+  --color-cream-dark: #f2e6e8;
 
   --radius-sm: 0.375rem;
   --radius-md: 0.625rem;
@@ -54,7 +55,6 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -71,7 +71,6 @@ body {
   font-family: var(--font-display);
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -80,36 +79,33 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c8c4b8;
+  background: #d4b0b8;
   border-radius: 99px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #a09c90;
+  background: #a8808c;
 }
 
-/* Custom utilities */
 .text-balance {
   text-wrap: balance;
 }
 
 .gradient-forest {
-  background: linear-gradient(135deg, #2d6a4f 0%, #1e4d38 100%);
+  background: linear-gradient(135deg, #7e1a34 0%, #6b1a2c 100%);
 }
-
 .gradient-harvest {
-  background: linear-gradient(135deg, #e8a838 0%, #d4841a 100%);
+  background: linear-gradient(135deg, #d09520 0%, #b07615 100%);
 }
 
 .gradient-hero {
   background: linear-gradient(
     160deg,
-    rgba(22, 53, 39, 0.92) 0%,
-    rgba(45, 106, 79, 0.75) 50%,
-    rgba(232, 168, 56, 0.4) 100%
+    rgba(107, 26, 44, 0.93) 0%,
+    rgba(126, 26, 52, 0.75) 50%,
+    rgba(208, 149, 32, 0.4) 100%
   );
 }
 
-/* Card hover effects */
 .card-hover {
   transition:
     transform 0.2s ease,
@@ -118,22 +114,19 @@ body {
 .card-hover:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 12px 40px -8px rgba(45, 106, 79, 0.18),
+    0 12px 40px -8px rgba(126, 26, 52, 0.18),
     0 4px 12px -4px rgba(0, 0, 0, 0.08);
 }
 
-/* Focus rings */
 :focus-visible {
-  outline: 2px solid #2d6a4f;
+  outline: 2px solid #7e1a34;
   outline-offset: 2px;
 }
 
-/* Section padding helper */
 .section-pad {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
 @media (max-width: 768px) {
   .section-pad {
     padding-top: 3rem;

@@ -1,40 +1,34 @@
-/**
- * site.config.ts — edit this file when deploying for a new client.
- *
- * MODE GUIDE
- * ----------
- * marketplace   Multi-producer platform. Full admin, producer onboarding,
- *               Stripe Connect commission splits. Sell to farmers market
- *               organisers, collectives, or aggregators.
- *
- * single-store  One brand, one producer's products. Direct Stripe checkout
- *               (no commission). Sell to individual farms, bakeries, etc.
- */
-
 import type { SiteConfig } from "@/lib/site-config.types";
 
 const config: SiteConfig = {
-  mode: "marketplace",
+  mode: "single-store",
 
   brand: {
-    name: "MarketStall",
-    tagline: "Your local market, delivered",
+    name: "The Grange Butchery",
+    tagline: "Heritage breeds, dry-aged on the farm, delivered to your door",
     description:
-      "Connecting East Midlands farmers and artisan producers directly with people who love great food. Every order supports a local family.",
-    email: "hello@marketstall.co.uk",
-    location: "East Midlands",
-    foundedYear: 2024,
-    socialInstagram: "https://instagram.com",
-    socialFacebook: "https://facebook.com",
+      "Fourth-generation family butchers in the Derbyshire Peak District. We rear our own Longhorn cattle and Saddleback pigs on traditional pasture, dry-age our beef for a minimum of 28 days, and butcher every carcass ourselves.",
+    email: "hello@thegrangebutchery.co.uk",
+    location: "Ashbourne, Derbyshire",
+    foundedYear: 1961,
+    socialInstagram: "https://instagram.com/thegrangebutchery",
+    socialFacebook: "https://facebook.com/thegrangebutchery",
   },
 
   features: {
-    producerOnboarding: true,
-    adminPanel: true,
-    multiProducer: true,
-    stripeConnect: true,
+    producerOnboarding: false,
+    adminPanel: false,
+    multiProducer: false,
+    stripeConnect: false,
     reviews: true,
   },
+
+  stats: [
+    { value: "28+", label: "Days Dry-Aged" },
+    { value: "4th Gen", label: "Family Farm" },
+    { value: "4.9★", label: "Average Rating" },
+    { value: "Est. 1961", label: "Derbyshire" },
+  ],
 };
 
 export default config;
