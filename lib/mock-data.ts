@@ -50,7 +50,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "approx. 200g portion",
     stock: 40,
     images: [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+      "/images/ribeye.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -73,7 +73,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "pack of 6",
     stock: 80,
     images: [
-      "https://images.unsplash.com/photo-1606851094661-38efb6dfe73d?w=800&q=80",
+      "/images/sausages.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -96,7 +96,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "500g",
     stock: 100,
     images: [
-      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+      "/images/brisket.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -119,7 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "per kg (approx. 1.2–1.5kg)",
     stock: 25,
     images: [
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+      "/images/bbq-box.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -142,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "per kg (approx. 1.8–2.2kg joint)",
     stock: 18,
     images: [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+      "/images/ribeye.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -164,7 +164,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "serves 4 (16 items)",
     stock: 20,
     images: [
-      "https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80",
+      "/images/sausages.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -186,7 +186,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "approx. 2kg whole bird",
     stock: 30,
     images: [
-      "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=800&q=80",
+      "/images/brisket.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
@@ -208,7 +208,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g",
     stock: 60,
     images: [
-      "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&q=80",
+      "/images/bbq-box.jpg",
     ],
     dietary: ["gluten-free", "dairy-free"],
     allergens: [],
