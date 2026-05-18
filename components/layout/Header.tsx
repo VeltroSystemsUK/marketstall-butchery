@@ -70,13 +70,25 @@ export default function Header() {
             transparent ? "text-white" : "text-forest-800",
           )}
         >
-          <Store
-            className={cn(
-              "h-6 w-6 transition-colors",
-              transparent ? "text-harvest-400" : "text-forest-600",
+          {config.brand.logoUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={config.brand.logoUrl}
+                alt={config.brand.name}
+                className="h-8 w-auto max-w-[160px] object-contain"
+                style={{ filter: transparent ? "brightness(0) invert(1)" : "none" }}
+              />
+            ) : (
+              <>
+                <Store
+                  className={cn(
+                    "h-6 w-6 transition-colors",
+                    transparent ? "text-harvest-400" : "text-forest-600",
+                  )}
+                />
+                <span>{config.brand.name}</span>
+              </>
             )}
-          />
-          <span>{config.brand.name}</span>
         </Link>
 
         {/* Desktop nav */}
