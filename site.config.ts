@@ -5,12 +5,12 @@ const config: SiteConfig = {
 
   brand: {
     name: "March House Farm",
-    tagline: "Grass-fed, field-to-fork meat from Leicestershire",
-    description: "March House Farm is a family-run farm and butchery nestled in the Leicestershire countryside, raising grass-fed beef, lamb, and pork the slow, proper way. Every cut is butchered on-site from animals they've reared themselves — so you know exactly where your meat comes from. No supermarket shortcuts, no mystery: just honest, flavourful meat that tastes the way it should.",
+    tagline: "Grass-Fed. Field to Fork. Leicestershire Proud.",
+    description: "March House Farm is a family-run farm in Great Dalby, Leicestershire, raising grass-fed beef, lamb, and pork with care, patience, and real respect for the land. Every cut is butchered on-site from animals that have lived well — you can taste the difference the moment it hits the pan. This is honest, sustainable meat from a farm that's been doing things properly since 2000.",
     email: "hello@marchhousefarm.co.uk",
     location: "Great Dalby, Leicestershire",
     foundedYear: 2000,
-    logoUrl: "https://marchhousefarm.co.uk/wp-content/uploads/2020/05/March-House-Farm-Shop-Text-1000x148.png",
+    logoUrl: "https://twochimpscoffee.com/wp-content/uploads/2018/06/TwoChimpsCoffee_March_House_Farm03.png",
     socialInstagram: "https://www.instagram.com/marchhousefarm",
     socialFacebook: "https://www.facebook.com/marchhousefarm",
   },
@@ -24,10 +24,10 @@ const config: SiteConfig = {
   },
 
   stats: [
-    { value: "Est. 2000", label: "Farming with Purpose" },
-    { value: "100%", label: "Grass-Fed & Farm-Reared" },
-    { value: "4.9★", label: "Customer Rating" },
-    { value: "Field-to-Fork", label: "Leicestershire & Rutland" },
+    { value: "Est. 2000", label: "Family Farming" },
+    { value: "100%", label: "Grass-Fed & Free-Range" },
+    { value: "3", label: "Species: Beef, Lamb & Pork" },
+    { value: "5★", label: "Customer Rated" },
   ],
 };
 
