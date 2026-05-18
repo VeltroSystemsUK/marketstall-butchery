@@ -4,15 +4,15 @@ const config: SiteConfig = {
   mode: "single-store",
 
   brand: {
-    name: "The Grange Butchery",
-    tagline: "Heritage breeds, dry-aged on the farm, delivered to your door",
-    description:
-      "Fourth-generation family butchers in the Derbyshire Peak District. We rear our own Longhorn cattle and Saddleback pigs on traditional pasture, dry-age our beef for a minimum of 28 days, and butcher every carcass ourselves.",
-    email: "hello@thegrangebutchery.co.uk",
-    location: "Ashbourne, Derbyshire",
-    foundedYear: 1961,
-    socialInstagram: "https://instagram.com/thegrangebutchery",
-    socialFacebook: "https://facebook.com/thegrangebutchery",
+    name: "March House Farm",
+    tagline: "Grass-fed, field-to-fork meat from Leicestershire",
+    description: "March House Farm is a family-run farm and butchery nestled in the Leicestershire countryside, raising grass-fed beef, lamb, and pork the slow, proper way. Every cut is butchered on-site from animals they've reared themselves — so you know exactly where your meat comes from. No supermarket shortcuts, no mystery: just honest, flavourful meat that tastes the way it should.",
+    email: "hello@marchhousefarm.co.uk",
+    location: "Great Dalby, Leicestershire",
+    foundedYear: 2000,
+    logoUrl: "https://marchhousefarm.co.uk/wp-content/uploads/2020/05/March-House-Farm-Shop-Text-1000x148.png",
+    socialInstagram: "https://www.instagram.com/marchhousefarm",
+    socialFacebook: "https://www.facebook.com/marchhousefarm",
   },
 
   features: {
@@ -24,10 +24,10 @@ const config: SiteConfig = {
   },
 
   stats: [
-    { value: "28+", label: "Days Dry-Aged" },
-    { value: "4th Gen", label: "Family Farm" },
-    { value: "4.9★", label: "Average Rating" },
-    { value: "Est. 1961", label: "Derbyshire" },
+    { value: "Est. 2000", label: "Farming with Purpose" },
+    { value: "100%", label: "Grass-Fed & Farm-Reared" },
+    { value: "4.9★", label: "Customer Rating" },
+    { value: "Field-to-Fork", label: "Leicestershire & Rutland" },
   ],
 };
 
