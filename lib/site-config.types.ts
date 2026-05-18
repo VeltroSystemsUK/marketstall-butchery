@@ -1,5 +1,4 @@
 export interface SiteConfig {
-  /** Controls which features and pages are active */
   mode: "marketplace" | "single-store";
 
   brand: {
@@ -10,6 +9,7 @@ export interface SiteConfig {
     email: string;
     location: string;
     foundedYear: number;
+    logoUrl?: string;
     socialInstagram?: string;
     socialFacebook?: string;
   };
