@@ -65,7 +65,11 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <section
+        className="relative flex min-h-screen items-center justify-center overflow-hidden"
+        data-demo-img="hero"
+        data-demo-img-label="Hero background"
+      >
         <Image
           src="/images/hero.jpg"
           alt="Dry-aged beef cuts on a wooden butcher block"
@@ -131,10 +135,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
+              <p
+                data-demo-edit="products-eyebrow"
+                className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
                 From our farm to your table
               </p>
-              <h2 className="font-display text-4xl font-bold text-gray-900">
+              <h2
+              data-demo-edit="products-heading"
+              className="font-display text-4xl font-bold text-gray-900">
                 Our finest cuts
               </h2>
             </div>
@@ -148,7 +156,7 @@ export default function HomePage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURED_PRODUCTS.map((product, i) => (
               <div key={product.id} data-reveal data-reveal-delay={i * 80}>
-                <ProductCard product={product} />
+                <ProductCard product={product} demoKey={`product-${i}`} />
               </div>
             ))}
           </div>
@@ -198,7 +206,9 @@ export default function HomePage() {
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-harvest-500">
                   Our story
                 </p>
-                <h2 className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
+                <h2
+                  data-demo-edit="story-heading"
+                  className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
                   Four generations. One unwavering standard.
                 </h2>
                 <p className="mb-4 text-base leading-relaxed text-forest-300">
@@ -214,7 +224,9 @@ export default function HomePage() {
                   Meet the family <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
-              <div className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
+              <div data-demo-img="story"
+                data-demo-img-label="Story photo"
+                className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
                 <Image
                   src="/images/hero.jpg"
                   alt="Heritage Longhorn cattle grazing on Derbyshire pasture"
@@ -268,10 +280,14 @@ export default function HomePage() {
                 <Truck className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-1-title"
+                  className="font-semibold text-gray-900">
                   Chilled next-morning delivery
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-1-body"
+                  className="text-sm text-gray-500">
                   Order before 5pm Tuesday or Thursday. Your order arrives
                   next-morning in chilled insulated packaging, vacuum-sealed for
                   freshness.
@@ -283,10 +299,14 @@ export default function HomePage() {
                 <RefreshCw className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-2-title"
+                  className="font-semibold text-gray-900">
                   Satisfaction guaranteed
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-2-body"
+                  className="text-sm text-gray-500">
                   Not completely happy with your order? We&apos;ll replace or
                   refund it without question. Our reputation matters more than
                   any single sale.
@@ -298,10 +318,14 @@ export default function HomePage() {
                 <ShieldCheck className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-3-title"
+                  className="font-semibold text-gray-900">
                   No additives, ever
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-3-body"
+                  className="text-sm text-gray-500">
                   No growth promoters, no routine antibiotics, no feed
                   additives. Our animals live as naturally as possible on Peak
                   District pasture.
@@ -367,7 +391,9 @@ export default function HomePage() {
             className="font-display mb-4 text-4xl font-bold text-white sm:text-5xl">
             Taste what proper meat is.
           </h2>
-          <p className="mb-8 text-lg text-forest-300">
+          <p
+            data-demo-edit="cta-body"
+            className="mb-8 text-lg text-forest-300">
             Heritage breeds, 28-day dry-ageing, and fourth-generation knowledge.
             Join over 2,000 customers who&apos;ve raised their standards.
           </p>
